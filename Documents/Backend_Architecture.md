@@ -6,6 +6,10 @@ The Vehicle Accident Detection and Response System (VADRS) uses a local host-bas
 
 The ESP32 communicates with the backend through HTTPS POST requests over Wi-Fi. The backend processes incoming data and makes it available to authorized users through a web interface.
 
+Homepage:
+
+![Homepage](../Results/Dashboard_Homepage.jpeg)
+
 ---
 
 ## System Architecture
@@ -160,6 +164,10 @@ The web dashboard provides:
 * SOS notifications
 * Vehicle status monitoring
 * Last known location display
+
+Dashboard:
+
+![Dashboard](../Results/User_Dashboard.png)
 
 ---
 
