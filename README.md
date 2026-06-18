@@ -69,13 +69,6 @@ The system also includes a manual SOS button, enabling users to request assistan
 * Sends location instantly
 * Useful during medical or security emergencies
 
-### Live Vehicle Tracking
-
-* GPS location transmitted periodically
-* Latest location updated every 5 seconds
-* No database storage required
-* View current or last known location through dashboard
-
 ---
 
 ## System Architecture
@@ -180,17 +173,6 @@ Upon accident detection:
 4. SMS is sent through SIM900A
 5. Accident details are transmitted to backend server
 6. Dashboard receives alert notification
-
----
-
-### 5. Live Location Tracking
-
-During normal operation:
-
-1. GPS coordinates are updated continuously
-2. Current location is transmitted to backend every 5 seconds
-3. Backend replaces previous location with latest coordinates
-4. User can view current or last known vehicle location
 
 ---
 
