@@ -245,13 +245,15 @@ ResQLink/
 │   └── ProtoStudio_Project_Report.pdf
 │
 ├── Media/
-│   └── Demonstration.mp4
+│   └── Demonstration.md
 │
 ├── References/
 │   ├── References/
 │   └── References.md
 │
+├── LICENSE
 └── README.md
+
 ```
 
 ---
