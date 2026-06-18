@@ -10,19 +10,21 @@ The ESP32 communicates with the backend through HTTPS POST requests over Wi-Fi. 
 
 ## System Architecture
 
-Vehicle Unit (ESP32 + Sensors)
-↓
-Wi-Fi Internet Connection
-↓
-HTTPS REST API
-↓
-Backend Server
-↓
-Web Dashboard
-↓
-Emergency Monitoring
+```mermaid
+flowchart TD
+    A[Vehicle Unit<br>ESP32 + MPU6050 + GPS + GSM]
+    B[Wi-Fi / Internet]
+    C[REST API]
+    D[Backend Server]
+    E[Web Dashboard]
+    F[Emergency Monitoring]
 
----
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+```
 
 ## Backend Responsibilities
 
@@ -57,33 +59,39 @@ The backend:
 
 ### Accident Mode
 
-MPU6050
-↓
-Accident Detection
-↓
-ESP32
-↓
-Accident Alert API
-↓
-Backend Server
-↓
-Dashboard Update
-↓
-Emergency Notification
+```mermaid
+flowchart TD
+    A[MPU6050]
+    B[Accident Detection]
+    C[ESP32]
+    D[Accident Alert APIBackend Server]
+    E[Backend Server]
+    F[Emergency Notification via Telephony API]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+```
 
 ### SOS Mode
 
-Push Button
-↓
-ESP32
-↓
-SOS API
-↓
-Backend Server
-↓
-Dashboard Update
-↓
-Emergency Notification
+```mermaid
+flowchart TD
+    A[Push Button]
+    B[ESP32]
+    C[SOS API]
+    D[Backend Server]
+    E[Dashboard Update]
+    F[Emergency Notification via Telephony API]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+```
 
 ---
 
