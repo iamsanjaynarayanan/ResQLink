@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Vehicle Accident Detection and Response System (VADRS) uses a cloud-based backend to receive accident alerts, SOS alerts, and vehicle location data from the ESP32 device. The backend acts as an intermediary between the embedded hardware and the web dashboard.
+The Vehicle Accident Detection and Response System (VADRS) uses a local host-based backend to receive accident alerts, SOS alerts, and vehicle location data from the ESP32 device. The backend acts as an intermediary between the embedded hardware and the web dashboard.
 
 The ESP32 communicates with the backend through HTTPS POST requests over Wi-Fi. The backend processes incoming data and makes it available to authorized users through a web interface.
 
@@ -53,36 +53,7 @@ The backend:
 
 ---
 
-### 3. Live Vehicle Tracking
-
-The ESP32 periodically transmits GPS coordinates to the backend.
-
-Features:
-
-* Location update every 5 seconds
-* Previous location overwritten
-* No historical database storage required
-* Latest known position always available
-
-This approach minimizes storage requirements while supporting real-time tracking.
-
----
-
 ## Data Flow
-
-### Normal Tracking Mode
-
-GPS Module
-↓
-ESP32
-↓
-Location Packet
-↓
-Backend API
-↓
-Latest Location Variable Updated
-↓
-Dashboard Display
 
 ### Accident Mode
 
@@ -153,23 +124,6 @@ Sample Payload:
 
 ---
 
-### Live Location Update
-
-POST /api/location
-
-Purpose:
-Update current vehicle location.
-
-Sample Payload:
-
-{
-"deviceId": "CAR7",
-"latitude": 11.108500,
-"longitude": 77.341200
-}
-
----
-
 ### Location Retrieval
 
 GET /api/location/{deviceId}
@@ -194,7 +148,6 @@ The web dashboard provides:
 
 * User registration and login
 * Vehicle registration
-* Live vehicle tracking
 * Accident notifications
 * SOS notifications
 * Vehicle status monitoring
