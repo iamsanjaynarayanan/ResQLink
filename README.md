@@ -209,7 +209,7 @@ ResQLink/
 │   ├── Hardware_Setup.jpg
 │   ├── Prototype.jpg
 │   ├── BOM.md
-│   ├── Formulae_and_Thresholds.md
+│   ├── Formulae_and_Threshold.md
 │   └── Backend_Architecture.md
 │
 ├── Results/
