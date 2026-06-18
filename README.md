@@ -266,7 +266,7 @@ The prototype successfully demonstrated:
 * Rollover detection
 * GPS location acquisition
 * Automated emergency SMS alerts
-* Cloud-based accident reporting
+* Local Host-based accident reporting
 * Live location tracking
 * Dashboard visualization
 * Manual SOS functionality
