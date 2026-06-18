@@ -222,7 +222,7 @@ ResQLink/
 │   └── User_Dashboard.png
 │
 ├── Presentation/
-│   ├── InnovSense_2026_Presentation.pptx
+│   ├── InnovSense_2026_Presentation.pdf
 │   ├── InnovSense_2026_Poster.pdf
 │   └── ProtoStudio_Project_Report.pdf
 │
